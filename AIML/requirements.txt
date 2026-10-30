@@ -1,7 +1,7 @@
 flask
-tensorflow==2.16.1
+tensorflow-cpu==2.15.0
 opencv-python
-numpy
+numpy==1.23.5
 pymongo
 requests
 werkzeug

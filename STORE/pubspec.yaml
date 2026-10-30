@@ -1,0 +1,72 @@
+# @format
+
+name: farm_sarthi_store
+description: Tablet SaaS app for pesticide store owners - Farm Sarthi AI
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State Management
+  flutter_riverpod: ^2.5.1
+
+  # Routing
+  go_router: ^14.2.0
+
+  # Network
+  dio: ^5.4.3+1
+
+  # JSON + Models
+  json_annotation: ^4.9.0
+
+  # Charts
+  fl_chart: ^0.68.0
+
+  # Maps
+  google_maps_flutter: ^2.7.0
+
+  # Local Storage
+  shared_preferences: ^2.2.3
+
+  # Date & Formatting
+  intl: ^0.19.0
+
+  # UI / Icons
+  cupertino_icons: ^1.0.6
+
+  # Utils
+  equatable: ^2.0.5
+
+  # Optional but useful
+  collection: ^1.18.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # Lints
+  flutter_lints: ^4.0.0
+
+  # Code generation (optional if using freezed/json_serializable)
+  build_runner: ^2.4.9
+  json_serializable: ^6.8.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+
+  # fonts:
+  #   - family: Inter
+  #     fonts:
+  #       - asset: assets/fonts/Inter-Regular.ttf
+  #       - asset: assets/fonts/Inter-Medium.ttf  
+  #       - asset: assets/fonts/Inter-SemiBold.ttf
+  #       - asset: assets/fonts/Inter-Bold.ttf

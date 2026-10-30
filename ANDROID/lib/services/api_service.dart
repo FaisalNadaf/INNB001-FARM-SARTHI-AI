@@ -60,7 +60,7 @@ class ApiService {
     await _loadToken();
 
     // This endpoint is hosted by the Python service (separate from main API)
-    final uri = Uri.parse("http://10.215.157.116:5000/predict");
+    final uri = Uri.parse("http://192.168.141.116:5000/predict");
 
     var request = http.MultipartRequest("POST", uri);
 

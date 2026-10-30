@@ -199,7 +199,7 @@ class ResultScreen extends StatelessWidget {
                   _buildSchemesSection(uniqueSchemes, theme),
 
                 // Weather & Season Info
-                _buildWeatherSeasonCard(season, humidity, temperature, theme),
+                // _buildWeatherSeasonCard(season, humidity, temperature, theme),
 
                 const SizedBox(height: 80), // Bottom padding for FAB
               ]),
@@ -678,7 +678,7 @@ class ResultScreen extends StatelessWidget {
               Container(
                 padding: const EdgeInsets.all(12),
                 decoration: BoxDecoration(
-                  color: const Color(0xFFF0F7F4),
+                  color: const Color.fromARGB(140, 255, 170, 170),
                   borderRadius: BorderRadius.circular(12),
                 ),
                 child: Text(
@@ -974,7 +974,7 @@ class ResultScreen extends StatelessWidget {
       ),
     );
 
-    final url = "http://10.215.157.116:5000/findStores?lat=$lat&lon=$lon";
+    final url = "http://192.168.141.116:5000/findStores?lat=$lat&lon=$lon";
 
     try {
       final res = await http.get(Uri.parse(url));
